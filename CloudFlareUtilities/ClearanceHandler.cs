@@ -107,12 +107,7 @@ namespace CloudFlareUtilities
         private static void EnsureClientHeader(HttpRequestMessage request)
         {
             if (!request.Headers.UserAgent.Any())
-            {
-                    // var a = new ProductInfoHeaderValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36");
-
-                request.Headers.UserAgent.TryParseAdd("Mozilla / 5.0(Macintosh; Intel Mac OS X 10_10_5) AppleWebKit / 537.36(KHTML, like Gecko) Chrome / 50.0.2661.102 Safari / 537.36");
-
-            }
+                request.Headers.UserAgent.Add(new ProductInfoHeaderValue("Client", "1.0"));
         }
 
         private static bool IsClearanceRequired(HttpResponseMessage response)
