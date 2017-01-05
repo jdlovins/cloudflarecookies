@@ -21,6 +21,9 @@ namespace CloudFlareCookies
 
         private async void btnMain_Click(object sender, EventArgs e)
         {
+            btnMain.Text = "Getting the information...";
+            btnMain.Enabled = false;
+
             var target = new Uri("http://poe.trade");
 
             var handler = new ClearanceHandler();
@@ -38,6 +41,9 @@ namespace CloudFlareCookies
             {
                 MessageBox.Show(ex.InnerException.Message);
             }
+
+            btnMain.Text = "Click me to get cookie info";
+            btnMain.Enabled = true;
         }
     }
 }

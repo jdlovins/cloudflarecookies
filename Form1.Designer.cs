@@ -39,29 +39,32 @@
             // 
             // txtCfClearance
             // 
-            this.txtCfClearance.Location = new System.Drawing.Point(86, 99);
+            this.txtCfClearance.Location = new System.Drawing.Point(86, 87);
             this.txtCfClearance.Name = "txtCfClearance";
-            this.txtCfClearance.Size = new System.Drawing.Size(279, 20);
+            this.txtCfClearance.ReadOnly = true;
+            this.txtCfClearance.Size = new System.Drawing.Size(361, 20);
             this.txtCfClearance.TabIndex = 13;
             // 
             // txtCfduid
             // 
-            this.txtCfduid.Location = new System.Drawing.Point(86, 76);
+            this.txtCfduid.Location = new System.Drawing.Point(86, 64);
             this.txtCfduid.Name = "txtCfduid";
-            this.txtCfduid.Size = new System.Drawing.Size(279, 20);
+            this.txtCfduid.ReadOnly = true;
+            this.txtCfduid.Size = new System.Drawing.Size(361, 20);
             this.txtCfduid.TabIndex = 12;
             // 
             // txtUserAgent
             // 
-            this.txtUserAgent.Location = new System.Drawing.Point(86, 53);
+            this.txtUserAgent.Location = new System.Drawing.Point(86, 41);
             this.txtUserAgent.Name = "txtUserAgent";
-            this.txtUserAgent.Size = new System.Drawing.Size(279, 20);
+            this.txtUserAgent.ReadOnly = true;
+            this.txtUserAgent.Size = new System.Drawing.Size(361, 20);
             this.txtUserAgent.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 102);
+            this.label3.Location = new System.Drawing.Point(12, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 10;
@@ -70,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 79);
+            this.label2.Location = new System.Drawing.Point(33, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 9;
@@ -79,7 +82,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 56);
+            this.label1.Location = new System.Drawing.Point(18, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 8;
@@ -89,7 +92,7 @@
             // 
             this.btnMain.Location = new System.Drawing.Point(12, 12);
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(353, 23);
+            this.btnMain.Size = new System.Drawing.Size(435, 23);
             this.btnMain.TabIndex = 7;
             this.btnMain.Text = "Click me to get cookie info";
             this.btnMain.UseVisualStyleBackColor = true;
@@ -99,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 252);
+            this.ClientSize = new System.Drawing.Size(454, 114);
             this.Controls.Add(this.txtCfClearance);
             this.Controls.Add(this.txtCfduid);
             this.Controls.Add(this.txtUserAgent);
@@ -107,8 +110,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Poe.Trade cookie getter";
             this.ResumeLayout(false);
             this.PerformLayout();
 

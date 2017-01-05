@@ -162,6 +162,8 @@ namespace CloudFlareUtilities
             IEnumerable<string> userAgent;
             if (response.RequestMessage.Headers.TryGetValues(HttpHeader.UserAgent, out userAgent))
                 clearanceRequest.Headers.Add(HttpHeader.UserAgent, userAgent);
+
+            await _client.SendAsync(clearanceRequest, cancellationToken);
         }
 
         private void SaveIdCookie(HttpResponseMessage response)
